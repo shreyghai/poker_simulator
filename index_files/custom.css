@@ -26,7 +26,7 @@
     <script>
       require.config({
           
-          urlArgs: "v=20201124162032",
+          urlArgs: "v=20201124195958",
           
           baseUrl: '/static/',
           paths: {
@@ -158,8 +158,8 @@ dir="ltr">
       <div class="navbar-inner">
         <div class="container">
           <div class="center-nav">
-            <form action="/login?next=%2Fnbconvert%2Fhtml%2Fdemo_notebook.ipynb%3Fdownload%3Dfalse" method="post" class="navbar-form pull-left">
-              <input type="hidden" name="_xsrf" value="2|30cb9244|21620600a4cc910bd534e36f08e90e8d|1606263753"/>
+            <form action="/login?next=%2Fnbconvert%2Fhtml%2Fcustom.css" method="post" class="navbar-form pull-left">
+              <input type="hidden" name="_xsrf" value="2|e76a1d37|f2823569a4ebb6ba9e943310b88d04d6|1606277365"/>
               
                 <label for="password_input"><strong>Password or token:</strong></label>
               
@@ -215,8 +215,8 @@ http://localhost:8888/?token=c8de56fa... :: /Users/you/notebooks
         <h3>Setup a Password</h3>
         <p> You can also setup a password by entering your token and a new password
         on the fields below:</p>
-        <form action="/login?next=%2Fnbconvert%2Fhtml%2Fdemo_notebook.ipynb%3Fdownload%3Dfalse" method="post" class="">
-                <input type="hidden" name="_xsrf" value="2|30cb9244|21620600a4cc910bd534e36f08e90e8d|1606263753"/>
+        <form action="/login?next=%2Fnbconvert%2Fhtml%2Fcustom.css" method="post" class="">
+                <input type="hidden" name="_xsrf" value="2|e76a1d37|f2823569a4ebb6ba9e943310b88d04d6|1606277365"/>
           <div class="form-group">
             <label for="token_input"><h4>Token</h4></label>
             <input type="password" name="password" id="token_input" class="form-control">
