@@ -558,7 +558,7 @@ def pair_counts(card_counts):
     if (pairs == 2 or pairs == 3):
         return 2
                 
-def determine_probability(game, number_simulations):
+def determine_probability(game, number_simulations, print_sim = False):
     if (game.cards_dealt == False):
         print("Please deal cards") 
         return
@@ -577,10 +577,11 @@ def determine_probability(game, number_simulations):
         for i in range(0, number_simulations):
             current_game.flop(print_bool = False)
             current_game.turn(print_bool = False)
-            print('Simulation {}'.format(i+1))
-            current_game.river(print_bool = True)
-            current_winner(current_game, return_bool = False)
-            print()
+            if (print_sim == True):
+	            print('Simulation {}'.format(i+1))
+	            current_game.river(print_bool = True)
+	            current_winner(current_game, return_bool = False)
+	            print()
             winner = current_winner(current_game, return_bool = True)
             if(len(winner) == 1):
                 game_winners[winner[0]] += 1
@@ -592,10 +593,11 @@ def determine_probability(game, number_simulations):
     if (len(game.table.table_cards) == 3):
         for i in range(0, number_simulations):
             current_game.turn(print_bool = False)
-            print('Simulation {}'.format(i+1))
-            current_game.river(print_bool = True)
-            current_winner(current_game, return_bool = False)
-            print()
+            if (print_sim == True):
+	            print('Simulation {}'.format(i+1))
+	            current_game.river(print_bool = True)
+	            current_winner(current_game, return_bool = False)
+	            print()
             winner = current_winner(current_game, return_bool = True)
             if(len(winner) == 1):
                 game_winners[winner[0]] += 1
@@ -606,10 +608,11 @@ def determine_probability(game, number_simulations):
 
     if (len(game.table.table_cards) == 4):
         for i in range(0, number_simulations):
-            print('Simulation {}'.format(i+1))
-            current_game.river(print_bool = True)
-            current_winner(current_game, return_bool = False)
-            print()
+            if (print_sim == True):
+	            print('Simulation {}'.format(i+1))
+	            current_game.river(print_bool = True)
+	            current_winner(current_game, return_bool = False)
+	            print()
             winner = current_winner(current_game, return_bool = True)
             if(len(winner) == 1):
                 game_winners[winner[0]] += 1
