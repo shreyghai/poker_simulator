@@ -2,7 +2,7 @@
 Poker Simulator and Probability Calculator
 By: Shrey Ghai 
 Collaborators: Payas Parab
-In this project, I have created a poker simulator.
+In this project, We have created a poker simulator.
 """
 
 import random
@@ -15,7 +15,7 @@ class Card:
         Example - Card("hearts", 3) would create a Card that represents the three of hearts.
         Input (suit): hearts, diamonds, spades, clubs
         Input (type): Integer between 2 and 14 (see note below). 
-        Jack = 11, Queen = 12, King = 13, A = 14  
+        Jack = 11, Queen = 12, King = 13, Ace = 14  
         """
         if suit not in ["\x1b[31m♥\x1b[0m", "\x1b[31m♦\x1b[0m", "♠", "♣"]:
             raise TypeError("You have input in an invalid suit")
