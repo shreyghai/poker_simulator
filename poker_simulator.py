@@ -1,8 +1,6 @@
 """
 Poker Simulator and Probability Calculator
 By: Shrey Ghai 
-Collaborators: Payas Parab
-In this project, We have created a poker simulator.
 """
 
 import random
